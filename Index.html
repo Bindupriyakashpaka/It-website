@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="AI Solutions Pvt. Ltd. - AI-driven solutions for businesses." />
+    <meta name="author" content="AI Solutions Pvt. Ltd." />
+    <title>AI Solutions Pvt. Ltd.</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50 font-roboto">
+    <!-- Header -->
+    <header class="bg-gray-100 text-gray-800 py-4">
+      <div class="container mx-auto flex justify-between items-center px-6">
+        <div class="flex items-center">
+          <img src="download - Copy (2).png" alt="AI Solutions Logo" class="w-40" />
+          <div class="ml-4">
+            <h2 class="text-xl font-semibold">AI Solutions Pvt. Ltd.</h2>
+            <h3 class="text-lg text-gray-600">"Unlock the Future with AI"</h3>
+          </div>
+        </div>
+        <nav class="space-x-6">
+          <a href="index.html" class="hover:text-gray-600">Home</a>
+          <a href="about.html" class="hover:text-gray-600">About Us</a>
+          <a href="services.html" class="hover:text-gray-600">Services</a>
+          <a href="portfolio.html" class="hover:text-gray-600">Portfolio</a>
+          <a href="contact.html" class="hover:text-gray-600">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center text-white py-24"
+      style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('assets/background.jpg');"
+    >
+      <div class="container mx-auto text-center">
+        <h1 class="text-5xl font-bold mb-4 drop-shadow-lg">
+          Innovative AI Solutions for Businesses
+        </h1>
+        <p class="text-xl mb-6 drop-shadow-md">
+          Leveraging cutting-edge technology to keep <b>AI Solutions</b> at the forefront.
+        </p>
+        <a
+          href="contact.html"
+          class="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
+          >Get in Touch</a
+        >
+      </div>
+    </section>
+
+    <!-- Logo, Company Name, and Slogan Section -->
+    <section
+      class="py-16 text-center bg-cover bg-center"
+      style="background-image: url('assets/bc.jpg');"
+    >
+      <div class="container mx-auto bg-black bg-opacity-50 py-10 rounded-lg">
+        <img src="download - Copy (2).png" alt="AI Solutions Logo" class="mx-auto w-60 mb-4" />
+        <h2 class="text-3xl font-bold text-white">AI Solutions Pvt. Ltd.</h2>
+        <p class="text-lg text-gray-200 mt-2">"Unlock the Future with AI"</p>
+      </div>
+    </section>
+
+    <!-- Chatbot Section -->
+    <!-- Chat Toggle Button -->
+    <button
+      id="chatbox-btn"
+      class="fixed bottom-10 right-10 bg-blue-600 p-4 rounded-full text-white cursor-pointer"
+    >
+      <i class="fas fa-comment-alt"></i> Chat with us
+    </button>
+
+    <!-- Chatbox Container (Initially hidden) -->
+    <div
+      id="chatbox"
+      class="hidden fixed bottom-20 right-10 bg-white w-80 h-96 shadow-lg rounded-lg"
+    >
+      <div class="bg-blue-600 text-white p-3 flex justify-between items-center">
+        <span>Chatbot</span>
+        <button id="close-chatbot" class="text-white">&times;</button>
+      </div>
+      <div id="chatlogs" class="p-3 h-64 overflow-y-auto text-sm"></div>
+      <input
+        type="text"
+        id="userInput"
+        class="w-full p-2 border-t"
+        placeholder="Type a message..."
+      />
+      <button id="send-button" class="w-full bg-blue-600 text-white p-2">Send</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-gray-800 py-6">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 AI Solutions Pvt. Ltd. | All Rights Reserved</p>
+        <p>
+          Location: Building Number 1, 10th Floor, Bangalore, Karnataka, India.
+          Telangana 500008
+        </p>
+      </div>
+    </footer>
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Chatbot Script -->
+    <script src="javascript.js"></script>
+  </body>
+</html>

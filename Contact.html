@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | AI Solutions Pvt. Ltd.</title>
+    <meta name="description" content="Get in touch with AI Solutions Pvt. Ltd. for your AI-powered business solutions.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS (Optional) -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Header Section with Light Colors -->
+    <header class="bg-gray-100 p-6 text-gray-800 shadow-md">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Company Logo and Name -->
+        <div class="flex items-center">
+          <img src="download - Copy (2).png" alt="AI Solutions Logo" class="w-40">
+          <div class="ml-4">
+            <h2 class="text-xl font-semibold">AI Solutions Pvt. Ltd.</h2>
+            <h3 class="text-lg text-gray-600">"Unlock the Future with AI"</h3>
+          </div>
+        </div>
+        <nav>
+          <ul class="flex space-x-6">
+            <li><a href="index.html" class="hover:text-gray-600">Home</a></li>
+            <li><a href="about.html" class="hover:text-gray-600">About Us</a></li>
+            <li><a href="services.html" class="hover:text-gray-600">Services</a></li>
+            <li><a href="portfolio.html" class="hover:text-gray-600">Portfolio</a></li>
+            <li><a href="contact.html" class="hover:text-gray-600">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contact Form Section with Background Image and Dark Overlay -->
+    <section class="py-20 bg-cover bg-center" style="background-image: url('images/ai-background.jpg');">
+      <div class="container mx-auto bg-black bg-opacity-70 p-8 rounded-lg text-white text-center">
+        <h2 class="text-4xl font-semibold mb-6">Contact Us</h2>
+        <form id="contact-form" class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+          <input type="text" name="name" id="name" placeholder="Your Name" class="w-full p-2 mb-4 rounded-lg border border-gray-300 text-black">
+          <input type="email" name="email" id="email" placeholder="Your Email" class="w-full p-2 mb-4 rounded-lg border border-gray-300 text-black">
+          <textarea name="message" id="message" placeholder="Your Message" class="w-full p-2 mb-4 rounded-lg border border-gray-300 text-black"></textarea>
+          <button type="submit" class="bg-blue-600 text-white w-full py-2 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
+        </form>
+
+        <!-- Display Submitted Form Details -->
+        <div id="form-details" class="mt-12 hidden bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold mb-4 text-black">Your Details:</h3>
+          <p id="display-name" class="text-lg text-black"></p>
+          <p id="display-email" class="text-lg text-black"></p>
+          <p id="display-message" class="text-lg text-black"></p>
+        </div>
+
+        <!-- Contact Details Section -->
+        <div class="mt-12">
+          <p class="text-xl font-bold">Contact Details</p>
+          <p class="text-lg">Phone: +91 9014023250</p>
+          <p class="text-lg">Location: Building Number 1, 10th Floor, Bangalore, Karnataka, India. Telangana 500008</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thank You Popup -->
+    <div id="thank-you-popup" class="hidden fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
+      <div class="bg-white p-8 rounded-lg text-center">
+        <p class="text-xl font-semibold">Thank you for submitting your details!</p>
+        <p class="mt-4">We will get back to you shortly.</p>
+        <button id="close-popup" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Close</button>
+      </div>
+    </div>
+
+    <!-- Link to JavaScript File -->
+    <script src="javaScript.js"></script>
+  </body>
+</html>
